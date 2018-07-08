@@ -1,0 +1,19 @@
+{
+  "name": "jiangshengxin/email",
+  "description": "JiangShengXin PHPEmail",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "PHPMailer\\": "src/PHPMailer"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
