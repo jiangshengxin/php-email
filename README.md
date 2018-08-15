@@ -1,25 +1,14 @@
-<?php
+# php-email
+PHPEmail邮箱类
 
+###安装
+```apple js
+composer require "jiangshengxin/email"
+```
 
-require_once __DIR__ . '/vendor/autoload.php';
-
-class Mail
-{
-
-    static public $error = '';
-
-    /**
-     * 使用demo
-     *
-     * @param $title
-     * @param $content
-     * @param $user
-     * @param $address
-     * @return null|string  成功返回null,失败返回错误原因
-     */
-    static public function send($title, $content, $user, $addRess, $fileUrl = './15.jpg')
-    {
-        $mail = new \PHPMailer\PHPMailer();
+###使用查看 demo.php
+```php
+$mail = new \PHPMailer\PHPMailer();
         /*服务器相关信息*/
         $mail->IsSMTP();                 //设置使用SMTP服务器发送
         $mail->SMTPAuth = true;               //开启SMTP认证
@@ -55,28 +44,7 @@ class Mail
             //self::$error=$mail->ErrorInfo;
             return $mail->ErrorInfo;
         }
-
-    }
-
-
-}
-
-#例
-
-if (Mail::send("标题", "123", "1161992285", "1348550820@qq.com")) {
-    echo "ok";
-} else {
-    echo Mail::$error;
-}
+```
 
 
-
-/**
- * demo.php
- *
- * 说明:
- *
- * 修改历史
- * ----------------------------------------
- * 2018/7/8   操作:创建
- **/
+**搞定**
