@@ -1,12 +1,15 @@
 # php-email
 PHPEmail邮箱类
 
-###安装
+
+### 安装
+
 ```apple js
 composer require "jiangshengxin/email"
 ```
 
-###使用查看 demo.php
+### 使用查看 demo.php
+
 ```php
 $mail = new \PHPMailer\PHPMailer();
         /*服务器相关信息*/
